@@ -34,7 +34,11 @@ def load_data(dataset, max_egs=None):
             n_ignored += 1
         else:
             x.append(" ".join(features_for(eg)))
-            y.append(l)
+
+            ind = np.argmax(np.array(l))
+            y.append(ind)
+            #y.append(l)
+
         if len(x) == max_egs:
             break
     return x, y, n_ignored
