@@ -8,7 +8,7 @@ from sklearn.metrics import confusion_matrix
 from stats import Stats
 import sys
 import tensorflow as tf
-from tensorflow.models.rnn import linear
+# from tensorflow.models.rnn import linear
 from tensorflow.models.rnn import rnn
 from tensorflow.models.rnn import rnn_cell
 import time
